@@ -19,8 +19,10 @@ from first_app import views
 #from django.conf.urls import url
 from django.conf.urls import include
 
+
 urlpatterns = [
     path('', views.index, name='index'),
     re_path(r'^first_app/', include('first_app.urls')),### using include it will automatically take the urls from urls.py
+    path('help/',include('help_page.urls')),
     path('admin/', admin.site.urls),
 ]
