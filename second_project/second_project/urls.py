@@ -21,4 +21,5 @@ urlpatterns = [
     path('',views.index, name = 'index'),
     path('admin/', admin.site.urls),
     re_path(r'app_1/', include('app_1.urls')),
+    path('form_page/', views.form_name_view, name = "form page")
 ]

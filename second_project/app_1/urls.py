@@ -5,4 +5,5 @@ from app_1 import views
 urlpatterns = [
     re_path(r'^$',views.index, name = 'index'),
     path('testpath',views.index, name = 'index'),
+
 ]

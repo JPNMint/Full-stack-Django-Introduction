@@ -102,3 +102,6 @@ python manage.py createsuperuser
 
 Access admin interface on browser by adding /admin.
 You can use the Faker library to add dummy data to play around.
+
+Django follows the MTV structure.
+https://towardsdatascience.com/working-structure-of-django-mtv-architecture-a741c8c64082
