@@ -101,3 +101,4 @@ python manage.py createsuperuser
 ```
 
 Access admin interface on browser by adding /admin.
+You can use the Faker library to add dummy data to play around.
