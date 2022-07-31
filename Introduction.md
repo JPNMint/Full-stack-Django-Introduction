@@ -105,3 +105,8 @@ You can use the Faker library to add dummy data to play around.
 
 Django follows the MTV structure.
 https://towardsdatascience.com/working-structure-of-django-mtv-architecture-a741c8c64082
+
+
+
+
+When publishing code on github, do not publish settings.py since it includes the secret key.

@@ -2,8 +2,9 @@ from django.contrib import admin
 from django.urls import path, re_path
 from app_1 import views
 
+app_name = "app_1_tag"
 urlpatterns = [
-    re_path(r'^$',views.index, name = 'index'),
-    path('testpath',views.index, name = 'index'),
+    path('',views.index, name = 'index'),
+    path('model_form', views.WebpageInput, name = 'webpageinput')
 
 ]

@@ -17,9 +17,12 @@ from django.contrib import admin
 from django.urls import path, include, re_path
 from app_1 import views
 
+
 urlpatterns = [
     path('',views.index, name = 'index'),
     path('admin/', admin.site.urls),
     re_path(r'app_1/', include('app_1.urls')),
-    path('form_page/', views.form_name_view, name = "form page")
+    path('form_page/', views.form_name_view, name = "form page"),
+    path('model_form/', views.WebpageInput, name="form model")
+
 ]

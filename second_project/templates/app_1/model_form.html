@@ -9,10 +9,10 @@
 <body>
 <div class="container">
     <h1>Form Page!!</h1>
-
+<a href="{% url 'index' %}">Go to index!</a>
 <p>Fill out this form!</p>
     <form method="post">
-        {{form.as_p}}
+        {{modelform.as_p}}
         {% csrf_token %}
         <input type="submit" class = "btn btn-primary" name="" value="Submit">
     </form>
